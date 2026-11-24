@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="resources/img/logo.png" alt="tmux-lta" width="200">
+</p>
+
 <h1 align="center">Logical Tmux Aliases</h1>
 
 <p align="center">A prefix-based shorthand system that turns tmux commands into muscle memory.</p>
