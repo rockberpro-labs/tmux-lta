@@ -16,7 +16,7 @@ curl -sL https://raw.githubusercontent.com/rockberpro-labs/tmux-lta/main/setup.s
 
 Then reload your shell (`source ~/.bashrc`).
 
-The script copies two files to `~/.config/tmux-lta/` (or `$XDG_CONFIG_HOME/tmux-lta/`) and adds a `source` line to `~/.bashrc`. Your `~/.tmux.conf` stays untouched.
+The script copies two files to `~/.config/tmux-lta/` (or `$XDG_CONFIG_HOME/tmux-lta/`) and adds a `source` line to `~/.bashrc`. It also adds `bind-key O select-pane -t :.-` (previous pane) to `~/.config/tmux/tmux.conf`. Your `~/.tmux.conf` stays untouched.
 
 Manual install and uninstall: [GUIDE.md](GUIDE.md).
 
@@ -64,7 +64,7 @@ tmk             # no name: kills the current session, like tmux kill-session
 
 - **Learnable, not memorizable.** Same prefix+suffix rule as [git-lga](https://github.com/rockberpro-labs/git-lga) and [docker-lda](https://github.com/rockberpro/docker-lda).
 - **`lta` built-in reference.** Forget an alias? One command lists them all.
-- **Non-invasive.** One sourced file; no changes to `~/.tmux.conf`.
+- **Non-invasive.** One sourced file; no changes to `~/.tmux.conf` (one key binding goes in `~/.config/tmux/tmux.conf`).
 - **No dependencies.** Plain bash.
 
 ---
